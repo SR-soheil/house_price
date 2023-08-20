@@ -1,8 +1,9 @@
 import pandas as pd
 import streamlit as st
-import joblib
+import pickle
 
-model = joblib.load('XGBosstModel.joblib')
+f = open('XGB_HOUSE.pickle','rb')
+model = pickle.load(f)
 
 addres = [
     "Abazar", "Abbasabad", "Abuzar", "Afsarieh", "Ahang", "Air force", "Ajudaniye", "Alborz Complex",

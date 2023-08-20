@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import pickle
 
-f = open('XGB_HOUSE.pickle','rb')
+f = open('1XGB_HOUSE.pickle','rb')
 model = pickle.load(f)
 
 addres = [
